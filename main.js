@@ -12743,52 +12743,8 @@ var $mdgriffith$elm_ui$Element$paragraph = F2(
 var $mdgriffith$elm_ui$Internal$Flag$overflow = $mdgriffith$elm_ui$Internal$Flag$flag(20);
 var $mdgriffith$elm_ui$Element$scrollbarY = A2($mdgriffith$elm_ui$Internal$Model$Class, $mdgriffith$elm_ui$Internal$Flag$overflow, $mdgriffith$elm_ui$Internal$Style$classes.scrollbarsY);
 var $mdgriffith$elm_ui$Element$spaceEvenly = A2($mdgriffith$elm_ui$Internal$Model$Class, $mdgriffith$elm_ui$Internal$Flag$spacing, $mdgriffith$elm_ui$Internal$Style$classes.spaceEvenly);
-var $elm$core$Basics$always = F2(
-	function (a, _v0) {
-		return a;
-	});
-var $yotamDvir$elm_katex$Katex$Configs$Math = F2(
-	function (a, b) {
-		return {$: 'Math', a: a, b: b};
-	});
-var $yotamDvir$elm_katex$Katex$Configs$inline = $yotamDvir$elm_katex$Katex$Configs$Math(false);
-var $yotamDvir$elm_katex$Katex$inline = A2($elm$core$Basics$composeL, $yotamDvir$elm_katex$Katex$Configs$inline, $elm$core$Basics$always);
-var $yotamDvir$elm_katex$Katex$Configs$generate = F4(
-	function (g, m, h, latex) {
-		var g_ = A2(g, m, h);
-		if (latex.$ === 'Human') {
-			var f = latex.a;
-			return A2(
-				g_,
-				$elm$core$Maybe$Nothing,
-				f(h));
-		} else {
-			var b = latex.a;
-			var f = latex.b;
-			var env = b ? 'display' : 'inline';
-			return A2(
-				g_,
-				$elm$core$Maybe$Just(b),
-				'$begin-' + (env + ('$' + (f(m) + ('$end-' + (env + '$'))))));
-		}
-	});
-var $yotamDvir$elm_katex$Katex$generate = function (g) {
-	return A3(
-		$yotamDvir$elm_katex$Katex$Configs$generate,
-		F2(
-			function (_v0, _v1) {
-				return g;
-			}),
-		'',
-		'');
-};
-var $yotamDvir$elm_katex$Katex$print = $yotamDvir$elm_katex$Katex$generate(
-	function (_v0) {
-		return $elm$core$Basics$identity;
-	});
 var $author$project$Main$tex = function (s) {
-	return $yotamDvir$elm_katex$Katex$print(
-		$yotamDvir$elm_katex$Katex$inline(s));
+	return '\\(' + (s + '\\)');
 };
 var $mdgriffith$elm_ui$Internal$Model$AsTextColumn = {$: 'AsTextColumn'};
 var $mdgriffith$elm_ui$Internal$Model$asTextColumn = $mdgriffith$elm_ui$Internal$Model$AsTextColumn;
