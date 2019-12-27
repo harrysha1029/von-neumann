@@ -5947,7 +5947,7 @@ var $author$project$Levels$zero = {
 	card: '0',
 	contents: _List_Nil,
 	info: _List_fromArray(
-		['Welcome! This is an app to explore the Von Neumann Universe, \\(V\\), the universe that encompasses most of math.', 'It is defined by transfinite recursion, and the empty set, \\(\\emptyset\\), is the base case.', 'Scroll up on the slider to the left (or use the arrows keys) to check out some more stages.']),
+		['Welcome! This is an app to explore the Von Neumann Universe, \\(V\\), the universe that encompasses most of math.', 'It is defined by transfinite recursion, and the empty set, \\(\\emptyset\\), is the base case.', 'Use the up down arrows keys to check out some more stages.']),
 	name: 'V_0'
 };
 var $author$project$Levels$levels = $elm$core$Array$fromList(
@@ -5963,13 +5963,6 @@ var $author$project$Main$reloadMath = _Platform_outgoingPort(
 var $author$project$Main$update = F2(
 	function (msg, model) {
 		switch (msg.$) {
-			case 'ChangeSlider':
-				var n = msg.a;
-				return _Utils_Tuple2(
-					_Utils_update(
-						model,
-						{k: model.k + 1, l: n}),
-					$author$project$Main$reloadMath(_Utils_Tuple0));
 			case 'Up':
 				return (_Utils_cmp(model.l + 2, $author$project$Main$numLevels) > 0) ? _Utils_Tuple2(model, $elm$core$Platform$Cmd$none) : _Utils_Tuple2(
 					_Utils_update(
