@@ -5821,7 +5821,7 @@ var $author$project$Levels$omega2 = {
 	contents: _List_fromArray(
 		['\\mathbb{N}', '\\mathbb{Z}', '\\text{All natural numbers and integers}', '...']),
 	info: _List_fromArray(
-		['An integer is an equivalence class on ordered pairs of natural numbers. Each ordered pair is in \\(V_\\omega\\), so the equivalence class is a subset of \\(V_\\omega\\) and hence in \\(V_{\\omega+1}\\). Thus \\(\\mathbb{Z} \\subseteq V_{\\omega+1}\\), and so \\(\\mathbb{Z} \\in V_{\\omega +2}\\)', 'The cooler property that holds for each \\(V_\\alpha\\) is known as transitivity: $begin-display$x \\in V_\\alpha \\implies x \\subseteq V_\\alpha.$end-display$']),
+		['An integer is an equivalence class on ordered pairs of natural numbers. Each ordered pair is in \\(V_\\omega\\), so the equivalence class is a subset of \\(V_\\omega\\) and hence in \\(V_{\\omega+1}\\). Thus \\(\\mathbb{Z} \\subseteq V_{\\omega+1}\\), and so \\(\\mathbb{Z} \\in V_{\\omega +2}\\)', 'The cooler property that holds for each \\(V_\\alpha\\) is known as transitivity: \\[x \\in V_\\alpha \\implies x \\subseteq V_\\alpha.\\]']),
 	name: 'V_{\\omega+2}'
 };
 var $author$project$Levels$omega5 = {

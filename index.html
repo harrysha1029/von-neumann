@@ -19,8 +19,7 @@
   var i = 0;
   app.ports.reloadMath.subscribe (function (f) {
       requestAnimationFrame(function () {
-        renderMathInElement(document.body, {delimiters: [{left: "$begin-inline$", right: "$end-inline$", display: false},{left: "$begin-display$", right: "$end-display$", display: true}, 
-        {left: "\\(", right: "\\)", display: false}], throwOnError:false});
+        renderMathInElement(document.body, {throwOnError:false});
       })
   });
   </script>
