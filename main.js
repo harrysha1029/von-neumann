@@ -5938,7 +5938,7 @@ var $author$project$Levels$v = {
 	contents: _List_fromArray(
 		['\\text{Everything?!}']),
 	info: _List_fromArray(
-		['Finally, \\(V = \\bigcup_{\\alpha \\in \\textbf{ON}} V_\\alpha\\)', 'It is the union of all the stages for each ordinal. Note that \\(V\\) is not a set but rather a class. If it were a set, there would be problems as \\(V\\) is a model for ZFC, but this would contradict the second incompleteness theorem.', 'Take a minute to think about the size of this thing. \\(V_6\\) was already much larger our universe. We then had infinitely many stages after that. Wild.']),
+		['Finally, \\(V = \\bigcup_{\\alpha \\in \\textbf{Ord}} V_\\alpha\\)', 'It is the union of all the stages for each ordinal. Note that \\(V\\) is not a set but rather a class. If it were a set, there would be problems as \\(V\\) is a model for ZFC, but this would contradict the second incompleteness theorem.', 'Take a minute to think about the size of this thing. \\(V_6\\) was already much larger our universe. We then had infinitely many stages after that. Wild.']),
 	name: 'V'
 };
 var $author$project$Levels$zero = {
