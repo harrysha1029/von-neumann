@@ -5846,7 +5846,7 @@ var $author$project$Levels$omegao = {
 	aka: _List_Nil,
 	card: '\\text{Ridiculous}',
 	contents: _List_fromArray(
-		['\\text{\"Ordinary Mathematics\"}', '...']),
+		['\\text{``Ordinary Mathematics\"}', '...']),
 	info: _List_fromArray(
 		['This is the next limit case so \\(V_{\\omega+\\omega} = \\bigcup_{\\alpha < \\omega + \\omega} V_\\alpha\\). Wikipedia calls this set the universe of ordinary mathematics', 'This is actually a model for ZFC without the axiom of replacement (axiom of replacement implies the existence of \\(\\omega + \\omega\\))']),
 	name: 'V_{\\omega+\\omega}'
@@ -5864,7 +5864,7 @@ var $author$project$Levels$omegas = {
 	aka: _List_Nil,
 	card: '\\text{Gigantic}',
 	contents: _List_fromArray(
-		['\\text{\"Extreme Mathematics???\"}', '...']),
+		['\\text{``Extreme Mathematics???\"}', '...']),
 	info: _List_fromArray(
 		['Don\'t know much about this one']),
 	name: 'V_{\\omega^2}'
