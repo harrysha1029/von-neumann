@@ -5835,7 +5835,7 @@ var $author$project$Levels$omega5 = {
 };
 var $author$project$Levels$omega6 = {
 	aka: _List_Nil,
-	card: '\\text{Really Reallly big}',
+	card: '\\text{Really reallly big}',
 	contents: _List_fromArray(
 		['\\mathbb{R}', '\\mathbb{Q}', '\\mathbb{N}', '\\text{hereditarily finite sets}', '...']),
 	info: _List_fromArray(
@@ -5947,7 +5947,7 @@ var $author$project$Levels$zero = {
 	card: '0',
 	contents: _List_Nil,
 	info: _List_fromArray(
-		['Welcome! This is an app to explore the Von Neumann Universe, \\(V\\), the universe that encompasses most of math.', 'It is defined by transfinite recursion, and the empty set, \\(\\emptyset\\), is the base case.', 'Scroll up on the slider to the left (or use the arrows) to check out some more stages.']),
+		['Welcome! This is an app to explore the Von Neumann Universe, \\(V\\), the universe that encompasses most of math.', 'It is defined by transfinite recursion, and the empty set, \\(\\emptyset\\), is the base case.', 'Scroll up on the slider to the left (or use the arrows keys) to check out some more stages.']),
 	name: 'V_0'
 };
 var $author$project$Levels$levels = $elm$core$Array$fromList(
