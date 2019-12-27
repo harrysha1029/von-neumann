@@ -5963,6 +5963,13 @@ var $author$project$Main$reloadMath = _Platform_outgoingPort(
 var $author$project$Main$update = F2(
 	function (msg, model) {
 		switch (msg.$) {
+			case 'ChangeSlider':
+				var n = msg.a;
+				return _Utils_Tuple2(
+					_Utils_update(
+						model,
+						{k: model.k + 1, l: n}),
+					$author$project$Main$reloadMath(_Utils_Tuple0));
 			case 'Up':
 				return (_Utils_cmp(model.l + 2, $author$project$Main$numLevels) > 0) ? _Utils_Tuple2(model, $elm$core$Platform$Cmd$none) : _Utils_Tuple2(
 					_Utils_update(
@@ -12986,44 +12993,44 @@ var $author$project$Main$render = function (model) {
 	} else {
 		var l = indexed.a;
 		return A2(
-			$mdgriffith$elm_ui$Element$column,
+			$mdgriffith$elm_ui$Element$Keyed$el,
 			_List_fromArray(
 				[
-					$mdgriffith$elm_ui$Element$padding(20),
-					$mdgriffith$elm_ui$Element$spacing(5),
-					$mdgriffith$elm_ui$Element$height($mdgriffith$elm_ui$Element$fill),
-					$mdgriffith$elm_ui$Element$width($mdgriffith$elm_ui$Element$fill)
+					$mdgriffith$elm_ui$Element$width($mdgriffith$elm_ui$Element$fill),
+					$mdgriffith$elm_ui$Element$height($mdgriffith$elm_ui$Element$fill)
 				]),
-			_List_fromArray(
-				[
-					A2(
-					$mdgriffith$elm_ui$Element$el,
+			_Utils_Tuple2(
+				$elm$core$String$fromInt(model.k),
+				A2(
+					$mdgriffith$elm_ui$Element$column,
 					_List_fromArray(
 						[
-							$mdgriffith$elm_ui$Element$Font$size(30),
-							$mdgriffith$elm_ui$Element$alignTop
+							$mdgriffith$elm_ui$Element$padding(20),
+							$mdgriffith$elm_ui$Element$spacing(5),
+							$mdgriffith$elm_ui$Element$height($mdgriffith$elm_ui$Element$fill),
+							$mdgriffith$elm_ui$Element$width($mdgriffith$elm_ui$Element$fill)
 						]),
-					$mdgriffith$elm_ui$Element$text(
-						$author$project$Main$tex(l.name))),
-					A2(
-					$mdgriffith$elm_ui$Element$el,
 					_List_fromArray(
 						[
-							$mdgriffith$elm_ui$Element$Font$size(30),
-							$mdgriffith$elm_ui$Element$alignTop
-						]),
-					$mdgriffith$elm_ui$Element$text(
-						$author$project$Main$tex('|' + (l.name + ('|' + ('=' + l.card)))))),
-					A2(
-					$mdgriffith$elm_ui$Element$Keyed$el,
-					_List_fromArray(
-						[
-							$mdgriffith$elm_ui$Element$width($mdgriffith$elm_ui$Element$fill),
-							$mdgriffith$elm_ui$Element$height($mdgriffith$elm_ui$Element$fill)
-						]),
-					_Utils_Tuple2(
-						$elm$core$String$fromInt(model.k),
-						A2(
+							A2(
+							$mdgriffith$elm_ui$Element$el,
+							_List_fromArray(
+								[
+									$mdgriffith$elm_ui$Element$Font$size(30),
+									$mdgriffith$elm_ui$Element$alignTop
+								]),
+							$mdgriffith$elm_ui$Element$text(
+								$author$project$Main$tex(l.name))),
+							A2(
+							$mdgriffith$elm_ui$Element$el,
+							_List_fromArray(
+								[
+									$mdgriffith$elm_ui$Element$Font$size(30),
+									$mdgriffith$elm_ui$Element$alignTop
+								]),
+							$mdgriffith$elm_ui$Element$text(
+								$author$project$Main$tex('|' + (l.name + ('|' + ('=' + l.card)))))),
+							A2(
 							$mdgriffith$elm_ui$Element$row,
 							_List_fromArray(
 								[
@@ -13096,8 +13103,8 @@ var $author$project$Main$render = function (model) {
 														]));
 											},
 											l.info)))
-								]))))
-				]));
+								]))
+						]))));
 	}
 };
 var $mdgriffith$elm_ui$Element$rgb255 = F3(
